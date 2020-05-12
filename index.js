@@ -1,3 +1,3 @@
-var Dog = require("Dog");
+var Dog = require("./Dog.js");
 
-var dog = new Dog(000, "Tommy");
+new Dog(000, "Tommy").sayHello();
