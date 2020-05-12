@@ -19,4 +19,4 @@ Dog.prototype.sayHello = function() {
 	console.log("Hello! I am a dog. My name is " + chalk.blue(this.name));
 }
 
-module.export = Dog;
+module.exports = Dog;

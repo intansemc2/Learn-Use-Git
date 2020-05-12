@@ -14,4 +14,4 @@ Cat.prototype.Eat = function(mouse) {
 }
 
 
-module.export = Cat;
+module.exports = Cat;
