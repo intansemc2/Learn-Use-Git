@@ -1,3 +1,5 @@
+var chalk = require("chalk");
+
 function Dog(id, name) {
 	this.id = id;
 	this.name = name;
@@ -12,3 +14,9 @@ Dog.prototype.Eat = function(cat) {
 Dog.prototype.Die = function() {
 	this.isDead = true;
 }
+
+Dog.prototype.sayHello = function() {
+	console.log("Hello! I am a dog. My name is " + chalk.blue(this.name));
+}
+
+module.export = Dog;
