@@ -1,15 +1,27 @@
 + git init : Tạo local repo mới 
 + git status : Hiện trạng thái 
-+ git add [tên file]: Thêm và check file để commit, thêm file vào Staging area 
-+ git commit [-m "Nội dung commit"]: Commit file vào repo
++ git add [<tên file>] Thêm và check file để commit, thêm file vào Staging area 
++ git commit [-m "<Nội dung commit>"]: Commit file vào repo
 
-+ git config --global user.email "email" : 
-+ git config --global user.name "tên" : 
++ git config --global user.email "<email>" : 
++ git config --global user.name "<tên>" : 
 
 + git log : Hiện danh sách lịch sử commit 
-+ git show [id của commit]: Hiện nội dung của commit 
++ git show [<id của commit>]: Hiện nội dung của commit 
 + git diff : Xem thay đổi của file đã được modify 
 
 + Working directory : Thư mục làm việc 
-+ Staging area : Khi commit thì file sẽ được thêm vào stag 
-+ Git repository : 
++ Staging area : Khi add thì file trong Working directory sẽ được thêm vào Staging 
++ Git repository : Lưu tập hợp các commit 
+
++ gitk : GUI cho Git
+
++ git checkout -- <file> : Hủy bỏ thay đổi trong Working directory 
++ git reset HEAD <file> : Hủy bỏ việc add file trong Working directory vào Staging
+
++ git restore <file> : Hủy bỏ thay đổi trong Working directory 
++ git restore --staged <file> : Hủy bỏ việc add file trong Working directory vào Staging
+
++ git checkout -b <branch_name> : 
++ git checkout <branch_out> : 
++ git merge : 
