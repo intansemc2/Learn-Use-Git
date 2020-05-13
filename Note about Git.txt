@@ -3,12 +3,18 @@
 + git add [<tên file>] Thêm và check file để commit, thêm file vào Staging area 
 + git commit [-m "<Nội dung commit>"]: Commit file vào repo
 
+
+
 + git config --global user.email "<email>" : 
 + git config --global user.name "<tên>" : 
+
+
 
 + git log : Hiện danh sách lịch sử commit 
 + git show [<id của commit>]: Hiện nội dung của commit 
 + git diff : Xem thay đổi của file đã được modify 
+
+
 
 + Working directory : Thư mục làm việc 
 + Staging area : Khi add thì file trong Working directory sẽ được thêm vào Staging 
@@ -16,11 +22,17 @@
 
 + gitk : GUI cho Git
 
+
+
 + git checkout -- <file> : Hủy bỏ thay đổi trong Working directory 
 + git reset HEAD <file> : Hủy bỏ việc add file trong Working directory vào Staging
 
+
+
 + git restore <file> : Hủy bỏ thay đổi trong Working directory 
 + git restore --staged <file> : Hủy bỏ việc add file trong Working directory vào Staging
+
+
 
 + git checkout -b <branch_name> : Tạo nhánh mới 
 + git checkout <branch_name> : Chuyển sang nhánh khác 
@@ -33,24 +45,38 @@
 	. git merge --abort : Hủy bỏ merge và trở về trạng thái trươc khi merge 
 + git branch -D <branch_name> : Xóa branch 
 
+
+
 + git reset --soft <to_id_commit> : Chuyển các commit trước commit id vào Staging area
 + git reset --mixed <to_id_commit> : Chuyển các commit trước commit id vào Working directory
 + git reset --hard <to_id_commit> : Xóa các commit trước commit id
 
+
+
 + git revert <commit_id> : Tạo commit mới dảo ngược commit id
 
+
+
 + .gitignore : Chứa các file và thư mục cần bỏ qua trong Working directory
+
+
 
 + git remote add origin <link_to_repo_github> : Thêm remote repo
 + git remove -v : Xem danh sách repo 
 + git push : Đưa code lên remote repo 
 + git push -u origin master : Push lần đầu tiên lên remote repo 
 
+
+
 + git config --global credential.helper store : Lưu thông tin đăng nhập vào ~./git-credential, không được mã hóa.
 + git config --global credential.helper "cache --timeout=18000" : Lưu thông tin đăng nhập vào ram trong 18000 phút 
 
+
+
 + git clone <link> : Clone một remote repo về máy 
 + get pull : Tải thay đổi từ remove repo về máy 
+
+
 
 + Pull request 
 + 1. git checkout -b <feature_branch> : 
@@ -66,12 +92,23 @@
 	4.3 Approve the pull request
 + 5. Merge to master : 
 
+
+
 + Reslove conflicts
 + Khi nào sảy ra?
 	1. Thay đổi một file + cùng một số dòng
 	2. A xóa file X, B thay đổi file 
+
 + Cách giải quyết 1:
-	1. Dùng "git rebase"
+	1. Dùng "git rebase":
+		git rebase <tên branch cần rebase với master>
+
 	2. Giải quyết conflict 
+		Giải quyết conflict trên code 
+		git add .
+		git rebase --continue
+
 	3. Push lên remote repo với tùy chọn -f 
+		git push origin <tên branch> -f 
+		
 + Cách giải quyết 2:
