@@ -12,4 +12,8 @@ Mouse.prototype.Die = function() {
 	this.isDead = true;
 }
 
+Mouse.prototype.runWhenSeeCat = function() {
+	console.log("Mouse run when see cat.");
+};
+
 module.exports = Mouse;
