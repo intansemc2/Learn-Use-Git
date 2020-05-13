@@ -1,0 +1,47 @@
++ git init : Tạo local repo mới 
++ git status : Hiện trạng thái 
++ git add [<tên file>] Thêm và check file để commit, thêm file vào Staging area 
++ git commit [-m "<Nội dung commit>"]: Commit file vào repo
+
++ git config --global user.email "<email>" : 
++ git config --global user.name "<tên>" : 
+
++ git log : Hiện danh sách lịch sử commit 
++ git show [<id của commit>]: Hiện nội dung của commit 
++ git diff : Xem thay đổi của file đã được modify 
+
++ Working directory : Thư mục làm việc 
++ Staging area : Khi add thì file trong Working directory sẽ được thêm vào Staging 
++ Git repository : Lưu tập hợp các commit 
+
++ gitk : GUI cho Git
+
++ git checkout -- <file> : Hủy bỏ thay đổi trong Working directory 
++ git reset HEAD <file> : Hủy bỏ việc add file trong Working directory vào Staging
+
++ git restore <file> : Hủy bỏ thay đổi trong Working directory 
++ git restore --staged <file> : Hủy bỏ việc add file trong Working directory vào Staging
+
++ git checkout -b <branch_name> : Tạo nhánh mới 
++ git checkout <branch_name> : Chuyển sang nhánh khác 
++ git branch : Xem sanh sách tên các nhánh
++ git merge <branch_name> : Merge branch mới vào branch hiện tại. Nếu không merge tự động được thì cần merge thủ công: 
+	. git status : Xem trạng thái merge 
+	. Sửa file bị conflict 
+	. git commit -m "<nội dung commit>" : Giải quyết conflict 
+	. git log --merge : xem log 
+	. git merge --abort : Hủy bỏ merge và trở về trạng thái trươc khi merge 
++ git branch -D <branch_name> : Xóa branch 
+
++ git reset --soft <to_id_commit> : Chuyển các commit trước commit id vào Staging area
++ git reset --mixed <to_id_commit> : Chuyển các commit trước commit id vào Working directory
++ git reset --hard <to_id_commit> : Xóa các commit trước commit id
+
++ git revert <commit_id> : Tạo commit mới dảo ngược commit id
+
++ .gitignore : Chứa các file và thư mục cần bỏ qua trong Working directory
+
++ git remote add origin <link_to_repo_github> : Thêm remote repo
++ git remove -v : Xem danh sách repo 
++ git push : Đưa code lên remote repo 
++ git push -u origin master : Push lần đầu tiên lên remote repo 
