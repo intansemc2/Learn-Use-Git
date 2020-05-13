@@ -101,7 +101,7 @@
 
 + Cách giải quyết 1:
 	1. Dùng "git rebase":
-		git rebase <tên branch cần rebase với master>
+		git rebase <tên branch master>
 
 	2. Giải quyết conflict 
 		Giải quyết conflict trên code 
@@ -110,5 +110,8 @@
 
 	3. Push lên remote repo với tùy chọn -f 
 		git push origin <tên branch> -f 
-		
+
 + Cách giải quyết 2:
+	1. Merge 
+	2. Giải quyết conflict 
+	3. Push lên remote repo

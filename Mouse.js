@@ -12,6 +12,10 @@ Mouse.prototype.Die = function() {
 	this.isDead = true;
 }
 
+Mouse.prototype.runWhenSeeCat = function() {
+	console.log("Mouse run when see cat.");
+};
+
 Mouse.prototype.sleep = function() {
 	console.log("Mouse is sleeping.");
 };
