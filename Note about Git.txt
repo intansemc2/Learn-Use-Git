@@ -59,5 +59,19 @@
 + 4. Review code :
 	4.1 Review code online (Github)
 	4.2 Fetch branch into local to test offline (optional)
+		. git fetch origin <tên branch>
+		. git checkout <tên branch>
+		. git checkout master
+		. Xóa branch test đi và pull từ remote 
 	4.3 Approve the pull request
 + 5. Merge to master : 
+
++ Reslove conflicts
++ Khi nào sảy ra?
+	1. Thay đổi một file + cùng một số dòng
+	2. A xóa file X, B thay đổi file 
++ Cách giải quyết 1:
+	1. Dùng "git rebase"
+	2. Giải quyết conflict 
+	3. Push lên remote repo với tùy chọn -f 
++ Cách giải quyết 2:
