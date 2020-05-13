@@ -47,7 +47,6 @@
 + git push -u origin master : Push lần đầu tiên lên remote repo 
 
 + git config --global credential.helper store : Lưu thông tin đăng nhập vào ~./git-credential, không được mã hóa.
-
 + git config --global credential.helper "cache --timeout=18000" : Lưu thông tin đăng nhập vào ram trong 18000 phút 
 
 + git clone <link> : Clone một remote repo về máy 
@@ -58,4 +57,7 @@
 + 2. git push origin <branch> : Đưa code lên github branch cụ thể 
 + 3. create a pull request on Github : 
 + 4. Review code :
+	4.1 Review code online (Github)
+	4.2 Fetch branch into local to test offline (optional)
+	4.3 Approve the pull request
 + 5. Merge to master : 
