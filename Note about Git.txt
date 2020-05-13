@@ -113,5 +113,23 @@
 
 + Cách giải quyết 2:
 	1. Merge 
+		git merge master
+
 	2. Giải quyết conflict 
+		Giải quyết conflict trên code 
+		git add .
+		git commit -m "<nội dung thay đổi>"
+
 	3. Push lên remote repo
+		git push origin <tên branch>
+
+
+
++ Fork repo
++ README.md file: Markdown cheatsheet, Markdown (online) editor
++ Issue tracking
++ Trending on Github
++ Oh my zsh : một terminal có hiển thị thư mục và branch hiện tại 
++ GUI tools: Source Tree, Git Kraken, Github Desktop
++ Hiểu sâu hơn về Git 
++ Học vim hặc nano 
