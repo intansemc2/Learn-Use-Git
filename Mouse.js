@@ -12,4 +12,8 @@ Mouse.prototype.Die = function() {
 	this.isDead = true;
 }
 
+Mouse.prototype.sleep = function() {
+	console.log("Mouse is sleeping.");
+};
+
 module.exports = Mouse;
